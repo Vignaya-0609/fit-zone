@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useEffect } from "react";
+import About from "./components/About";
+import Banner from "./components/Banner";
+import Community from "./components/Community";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import Parallex from "./components/Parallex";
+import PricingPlans from "./components/PricingPlans";
+import Program from "./components/Program";
+import Services from "./components/Services";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar/>
+    <Banner/>
+    <Parallex/>
+    <About/>
+    <Program/>
+    <Services/>
+    <PricingPlans/>
+    <Community/>
+    <Footer/>
+    </>
+    
   );
 }
 
