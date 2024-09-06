@@ -14,7 +14,7 @@ function Services() {
   };
 
   return (
-    <Container className="mt-5 mb-5">
+    <Container className="mt-5 mb-5" id="services">
         <h2 className='mt-5 mb-4 text-center'>Achieve More with Our Services</h2>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>

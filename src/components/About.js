@@ -8,7 +8,7 @@ import abt from "../assets/images/about.jpg";
 function About() {
   return (
     <>
-      <Container className='mt-5 mb-5' data-aos="fade-up">
+      <Container className='mt-5 mb-5' data-aos="fade-up" id="about">
         <Row className="align-items-center">
           <Col md={12} lg={5}>
           <div className="image-wrapper">

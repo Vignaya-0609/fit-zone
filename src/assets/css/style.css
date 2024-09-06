@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-padding-top: 40px;
+}
 :root{
     --primary-clr:#212529;
     --secondary-clr:#FFA200;

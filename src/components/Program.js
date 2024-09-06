@@ -34,7 +34,7 @@ const data = [
 
 function Program() {
   return (
-    <Container className='mt-5 mb-5'>
+    <Container className='mt-5 mb-5' id="programs">
       <h2 className='mt-5 mb-4 text-center'>Explore Our Program</h2>
       <Row xs={1} sm={2} md={2} lg={4} className="g-4">
         {data.map((item, idx) => (
